@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body class="app-notas">
+    <header class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <h1 class="navbar-brand">Notas App</h1>
+            </div>
+            <span class="nav navbar-nav navbar-right titulo-seccion">
+                Listado de notas
+            </span>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col" data-aula="a">
+                <div class="card">
+                    <div class="header row">
+                        <h2 class="col-10">Aula A</h2>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered tabla-alumnos lista-notas">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Apellido</th>
+                                    <th>Nota</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="nota-base">
+                                    <td class="alumno-nombre">Luis</td>
+                                    <td class="alumno-apellido">González</td>
+                                    <td class="alumno-nota text-center">6</td>
+                                </tr>
+                                <!--<tr class="table-danger">
+                                    <td>Esteban</td>
+                                    <td>Prieto</td>
+                                    <td class="text-center">3.5</td>
+                                </tr>-->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer totales">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">Nota media</div>
+                                    <div class="card-body numbers nota-media">4.75</div>
+                                    <i class="fa icono-status nota-media-status"></i>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">Máxima nota</div>
+                                    <div class="card-body numbers nota-maxima">6</div>
+                                    <i class="fa icono-status nota-maxima-status"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">Aprobados</div>
+                                    <div class="card-body numbers aprobados">1 (50%)</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">Suspensos</div>
+                                    <div class="card-body numbers suspensos">1 (50%)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aula="b">
+                <div class="card">
+                    <div class="header row">
+                        <h2 class="col-10">Aula B</h2>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered tabla-alumnos lista-notas">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Apellido</th>
+                                    <th>Nota</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="nota-base">
+                                    <td class="alumno-nombre">Patricia</td>
+                                    <td class="alumno-apellido">Nieto</td>
+                                    <td class="alumno-nota text-center">6</td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>Joaquín</td>
+                                    <td>Calero</td>
+                                    <td class="text-center">3.5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer totales">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">Nota media</div>
+                                    <div class="card-body numbers nota-media">4.75</div>
+                                    <i class="fa icono-status nota-media-status"></i>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">Máxima nota</div>
+                                    <div class="card-body numbers nota-maxima">6</div>
+                                    <i class="fa icono-status nota-maxima-status"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">Aprobados</div>
+                                    <div class="card-body numbers aprobados">1 (50%)</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">Suspensos</div>
+                                    <div class="card-body numbers suspensos">1 (50%)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aula="c">
+                <div class="card">
+                    <div class="header row">
+                        <h2 class="col-10">Aula C</h2>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered tabla-alumnos lista-notas">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Apellido</th>
+                                    <th>Nota</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="nota-base">
+                                    <td class="alumno-nombre">Dolores</td>
+                                    <td class="alumno-apellido">Moreno</td>
+                                    <td class="alumno-nota text-center">6</td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>Marta</td>
+                                    <td>Suárez</td>
+                                    <td class="text-center">3.5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer totales">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">Nota media</div>
+                                    <div class="card-body numbers nota-media">4.75</div>
+                                    <i class="fa icono-status nota-media-status"></i>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">Máxima nota</div>
+                                    <div class="card-body numbers nota-maxima">6</div>
+                                    <i class="fa icono-status nota-maxima-status"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">Aprobados</div>
+                                    <div class="card-body numbers aprobados">1 (50%)</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">Suspensos</div>
+                                    <div class="card-body numbers suspensos">1 (50%)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row totales totales-globales">
+            <div class="col">
+                <div class="card">
+                    <div class="header">
+                        <h2>General</h2>
+                    </div>
+                    <div class="card-body row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header">Nota media</div>
+                                <div class="card-body numbers nota-media">4.5</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header">Máxima nota</div>
+                                <div class="card-body numbers nota-maxima">4.5</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header">Aprobados</div>
+                                <div class="card-body numbers aprobados">4 (30%)</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header">Suspensos</div>
+                                <div class="card-body numbers suspensos">4 (30%)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--<div class="loading">
+        <img src="img/loading.svg" alt="cargando">
+      </div>-->
+</body>
+
+</html>
